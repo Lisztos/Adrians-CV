@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+#
+# MASTER CV — single source of truth.
+# Per-job tailored CVs are created as copies of this file (see README.md).
+cv:
+  name: Adrian Sanchez
+  headline: Senior Software Engineer
+  location: Berlin, Germany
+  email: adrian@lisztostech.com
+  website: https://adrianisanchez.com
+  social_networks:
+    - network: LinkedIn
+      username: adrian-isaias-sanchez
+  sections:
+    summary:
+      - Senior Software Engineer with 5+ years building B2B SaaS platforms. Specializes
+        in Ruby on Rails backends, complex third-party integrations, and AI-powered
+        product features, with end-to-end ownership across APIs and infrastructure.
+    experience:
+      - company: Innovandio GmbH
+        position: Senior Software Engineer
+        location: Berlin
+        start_date: 2023-10
+        end_date: 2026-05
+        highlights:
+          - Architected backend systems and integrations (Twilio, APNs, FCM, Microsoft
+            Graph API, Power BI, Timecard, POS payment terminals) for a multi-service
+            Rails platform powering 30+ car wash and gas stations across Germany and
+            Austria, serving 3,000+ users
+          - Engineered CI/CD pipelines on AWS and GitHub Actions with Docker and SonarQube
+            quality gates, reducing deployment failures and release times
+          - Built an AI-powered billing pipeline integrating GitHub, calendar, video
+            call, and project management data that automated client reporting and reduced
+            it from a full day per month to 10 minutes per week
+          - Developed custom Angular plugins on top of OpenProject's Rails backend for
+            Mercedes-AMG, covering agenda management, meeting minutes, and PowerPoint
+            exports
+          - "**Tech Stack:** Ruby on Rails, Matestack, PostgreSQL, Redis, Vue.js, Angular.js,
+            Terraform, AWS"
+      - company: Demodesk GmbH
+        position: Full Stack Software Engineer / Team Lead
+        location: Munich
+        start_date: 2022-02
+        end_date: 2023-09
+        highlights:
+          - Led a team of ~10 engineers maintaining core backend services for a B2B SaaS
+            platform used by 20,000+ users
+          - Reduced engineering backlog by ~40 percent during team lead period while
+            maintaining continuous feature delivery
+          - Worked in a cross-functional feature team that integrated Google Meet to the
+            platform
+          - Owned scheduling, Salesforce/HubSpot/Pipedrive integrations, user onboarding,
+            and core video workflows
+          - Shipped features end to end, from system design to production deployment
+          - Refactored core modules and reduced codebase complexity by ~15 percent
+          - "**Tech Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Terraform, Gitlab,
+            AWS"
+      - company: Setting HQ
+        position: Ruby on Rails Engineer (Intern)
+        location: Berlin
+        start_date: 2020-10
+        end_date: 2022-02
+        highlights:
+          - Optimized the platform's Office Search functionality, reducing page load
+            times by 45%.
+          - Developed an office onboarding system, digitizing a previous manual and
+            error-prone system
+          - Eliminated legacy dependencies by migrating the platform to a modern system
+            architecture
+    education:
+      - institution: Technische Universität Berlin
+        area: Business Informatics (Wirtschaftsinformatik)
+        degree: B.Sc.
+        start_date: 2018
+        end_date: 2022
+    skills:
+      - label: Backend
+        details: Ruby on Rails, PostgreSQL, Redis
+      - label: Frontend
+        details: Vue.js, React, TypeScript
+      - label: DevOps
+        details: AWS, Terraform, Docker, CI/CD
+      - label: Integrations
+        details: CRMs, LLMs, payments, reporting
+    languages:
+      - label: Languages
+        details: Spanish (native), English (fluent), German (fluent)
+design:
+  theme: classic

@@ -1,0 +1,12 @@
+# Python virtualenv
+venv/
+__pycache__/
+*.pyc
+
+# Rendered output (regenerated from YAML — the YAML is the source of truth)
+rendercv_output/
+theme_preview/
+*_output/
+
+# OS
+.DS_Store
