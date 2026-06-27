@@ -87,3 +87,5 @@ cv:
         details: Spanish (native), English (fluent), German (fluent)
 design:
   theme: engineeringresumes
+  page:
+    show_top_note: false
