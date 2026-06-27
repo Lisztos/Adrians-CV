@@ -88,7 +88,17 @@ design:
   theme: engineeringresumes
   page:
     show_top_note: false
+    top_margin: 1.3cm
+    bottom_margin: 1.3cm
+    left_margin: 1.5cm
+    right_margin: 1.5cm
   header:
     connections:
       show_icons: true
       hyperlink: true
+  section_titles:
+    space_above: 0.3cm
+    space_below: 0.2cm
+  sections:
+    space_between_regular_entries: 0.7em
+    space_between_text_based_entries: 0.2em
