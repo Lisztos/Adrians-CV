@@ -14,6 +14,19 @@ Installed: RenderCV v2.8 (Typst engine). YAML schema is pinned in each file's fi
 (`$schema=...refs/tags/v2.8/schema.json`). If you upgrade RenderCV, run `rendercv new "X"`
 again to diff the schema — key names change across versions.
 
+## Variants
+
+There are several master variants. Render each into its own output folder:
+
+| File | Language | Location | Render command |
+|------|----------|----------|----------------|
+| `base.yaml` | English | Berlin, Germany | `./venv/bin/rendercv render base.yaml` |
+| `base-de.yaml` | German | Berlin, Deutschland | `./venv/bin/rendercv render base-de.yaml -o rendercv_output/de` |
+| `base-mx.yaml` | English | Cuernavaca, Mexico | `./venv/bin/rendercv render base-mx.yaml -o rendercv_output/mx` |
+
+The German file sets `locale: language: german`, which localizes dates (e.g. `Okt 2023 – Mai 2026`);
+its section titles are written in German since the section key *is* the displayed heading.
+
 ## Render
 
 ```bash
@@ -69,7 +82,9 @@ printf "design:\n  theme: sb2nov\n" > /tmp/d.yaml
 
 | File | Purpose |
 |------|---------|
-| `base.yaml` | Master CV — single source of truth |
+| `base.yaml` | Master CV (English, Berlin) — single source of truth |
+| `base-de.yaml` | German variant |
+| `base-mx.yaml` | English variant, Cuernavaca/Mexico location |
 | `company-role.yaml` | Per-job tailored copies (committed) |
 | `rendercv_output/` | Generated artifacts (git-ignored) |
 | `venv/` | Local Python env (git-ignored) |

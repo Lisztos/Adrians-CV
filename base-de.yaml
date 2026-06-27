@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+#
+# DEUTSCHE FASSUNG — Sprachvariante des Master-CVs (siehe base.yaml für die englische Fassung).
+cv:
+  name: Adrian Sanchez
+  headline: Senior Software Engineer
+  location: Berlin, Deutschland
+  email: adrian@lisztostech.com
+  website: https://adrianisanchez.com
+  social_networks:
+    - network: LinkedIn
+      username: adrian-isaias-sanchez
+  sections:
+    Profil:
+      - Senior Software Engineer mit über 5 Jahren Erfahrung im Aufbau von B2B-SaaS-Plattformen.
+        Schwerpunkte liegen auf Ruby-on-Rails-Backends, komplexen Drittanbieter-Integrationen
+        und KI-gestützten Produktfeatures, inklusive End-to-End-Verantwortung von der API
+        bis zur Infrastruktur.
+    Berufserfahrung:
+      - company: Innovandio GmbH
+        position: Senior Software Engineer
+        location: Berlin
+        start_date: 2023-10
+        end_date: 2026-05
+        highlights:
+          - Konzeption und Aufbau von Backend-Systemen und Integrationen (Twilio, Microsoft
+            Graph API, Power BI, POS-Zahlungsterminals) für eine Multi-Service-Rails-Plattform
+            mit über 30 Wasch- und Tankstellen in Deutschland und Österreich, 3.000+ Nutzer
+          - Aufbau von CI/CD-Pipelines auf AWS und GitHub Actions mit Docker und SonarQube-Quality-Gates;
+            weniger Deployment-Fehler, kürzere Release-Zeiten
+          - Entwicklung einer KI-gestützten Abrechnungs-Pipeline (GitHub, Kalender, Videocalls,
+            Projektmanagement); automatisiertes Kundenreporting, Aufwand von einem Tag/Monat
+            auf 10 Minuten/Woche reduziert
+          - "Entwicklung individueller Angular-Plugins auf Basis des OpenProject-Rails-Backends
+            für Mercedes-AMG: Agenda-Verwaltung, Sitzungsprotokolle, PowerPoint-Exporte"
+          - "**Tech-Stack:** Ruby on Rails, Matestack, PostgreSQL, Redis, Vue.js, Angular.js,
+            Terraform, AWS"
+      - company: Demodesk GmbH
+        position: Full Stack Software Engineer / Team Lead
+        location: München
+        start_date: 2022-02
+        end_date: 2023-09
+        highlights:
+          - Leitung eines Teams von rund 10 Engineers für die zentralen Backend-Services
+            einer B2B-SaaS-Plattform mit über 20.000 Nutzern
+          - Reduzierung des Engineering-Backlogs um rund 40 % als Team Lead bei kontinuierlicher
+            Feature-Auslieferung
+          - Verantwortung für Terminplanung, Salesforce-/HubSpot-/Pipedrive-Integrationen,
+            User-Onboarding und zentrale Video-Workflows
+          - Refactoring zentraler Module, Reduzierung der Codebase-Komplexität um rund 15 %
+          - "**Tech-Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Terraform, GitLab, AWS"
+      - company: Setting HQ
+        position: Ruby on Rails Engineer (Werkstudent)
+        location: Berlin
+        start_date: 2020-10
+        end_date: 2022-02
+        highlights:
+          - Optimierung der Office-Search-Funktion, Reduktion der Ladezeiten um 45 %
+          - Entwicklung eines Onboarding-Systems für Offices; Digitalisierung eines zuvor
+            manuellen, fehleranfälligen Prozesses
+          - Ablösung von Legacy-Abhängigkeiten durch Migration auf eine moderne Systemarchitektur
+    Ausbildung:
+      - institution: Technische Universität Berlin
+        area: Wirtschaftsinformatik
+        degree: B.Sc.
+        start_date: 2018
+        end_date: 2022
+    Technische Kenntnisse:
+      - label: Backend
+        details: Ruby on Rails, PostgreSQL, Redis
+      - label: Frontend
+        details: Vue.js, React, TypeScript
+      - label: DevOps
+        details: AWS, Terraform, Docker, CI/CD
+      - label: Integrationen
+        details: CRMs, LLMs, Payments, Reporting
+    Sprachen:
+      - label: Sprachen
+        details: Spanisch (Muttersprache), Englisch (verhandlungssicher), Deutsch (verhandlungssicher)
+locale:
+  language: german
+design:
+  theme: engineeringresumes
+  page:
+    show_top_note: false
+  header:
+    connections:
+      show_icons: true
+      hyperlink: true
