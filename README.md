@@ -38,13 +38,24 @@ Output is git-ignored — it's always regenerated from YAML.
 
 ## Per-job workflow
 
-1. **Copy the master**, naming it `company-role.yaml`:
+Everything stays on `main` — one file per application under `jobs/`. No branches:
+job CVs are independent, permanent artifacts that coexist (a branch would only let you
+see one at a time and wouldn't inherit `base.yaml` improvements).
+
+1. **Copy a master** into `jobs/`, naming it `company-role.yaml`:
 
    ```bash
-   cp base.yaml acme-backend-engineer.yaml
+   cp base.yaml jobs/acme-backend-engineer.yaml
    ```
 
-2. **Edit only what the posting needs.** Keep edits as a small diff against `base.yaml`:
+2. **Add the job link as a comment** at the top of the file, e.g.:
+
+   ```yaml
+   # TAILORED — Acme "Backend Engineer". English, Berlin.
+   # Job posting: https://acme.example.com/jobs/backend-engineer
+   ```
+
+3. **Edit only what the posting needs.** Keep edits as a small diff against the master:
    - `cv.headline` — match the target title (e.g. `Backend Engineer`).
    - `summary` section — reorder/sharpen one sentence toward the role; don't rewrite wholesale.
    - `experience[].highlights` — reorder so the most relevant bullets lead; you may drop
@@ -52,18 +63,18 @@ Output is git-ignored — it's always regenerated from YAML.
    - `skills` — surface the stack the posting asks for first.
    - `design.theme` — leave as-is unless a company expects a specific look.
 
-3. **Render the tailored file** into its own folder so PDFs don't collide:
+4. **Render the tailored file** into its own folder so PDFs don't collide:
 
    ```bash
-   ./venv/bin/rendercv render acme-backend-engineer.yaml -o output/acme-backend-engineer
+   ./venv/bin/rendercv render jobs/acme-backend-engineer.yaml -o output/acme-backend-engineer
    ```
 
    The final PDF: `output/acme-backend-engineer/Adrian_Sanchez_CV.pdf`.
 
-4. **Commit the YAML** (not the PDF — it's regeneratable):
+5. **Commit the YAML** (not the PDF — it's regeneratable):
 
    ```bash
-   git add acme-backend-engineer.yaml
+   git add jobs/acme-backend-engineer.yaml
    git commit -m "Tailor CV for Acme Backend Engineer"
    ```
 
@@ -85,6 +96,6 @@ printf "design:\n  theme: sb2nov\n" > /tmp/d.yaml
 | `base.yaml` | Master CV (English, Berlin) — single source of truth |
 | `base-de.yaml` | German variant |
 | `base-mx.yaml` | English variant, Cuernavaca/Mexico location |
-| `company-role.yaml` | Per-job tailored copies (committed) |
-| `rendercv_output/` | Generated artifacts (git-ignored) |
+| `jobs/company-role.yaml` | Per-job tailored copies (committed) |
+| `rendercv_output/`, `output/` | Generated artifacts (git-ignored) |
 | `venv/` | Local Python env (git-ignored) |

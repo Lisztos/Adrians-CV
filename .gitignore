@@ -6,6 +6,7 @@ __pycache__/
 # Rendered output (regenerated from YAML — the YAML is the source of truth)
 rendercv_output/
 theme_preview/
+output/
 *_output/
 
 # OS

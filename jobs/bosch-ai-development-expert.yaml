@@ -1,0 +1,116 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+#
+# TAILORED — Bosch "AI Development Expert" (freelance, remote). English, Berlin.
+# Job posting: https://www.freelancermap.de/projekt/ai-development-expert
+# Tailored from base.yaml: reordered/resharpened toward full-stack + AI solutions
+# and third-party/Microsoft integrations. No fabricated skills.
+cv:
+  name: Adrian Sanchez
+  headline: Full Stack & AI Solutions Engineer
+  location: Berlin, Germany
+  email: adrian@lisztostech.com
+  website: https://adrianisanchez.com
+  social_networks:
+    - network: LinkedIn
+      username: adrian-isaias-sanchez
+  sections:
+    summary:
+      - Full-stack engineer with 5+ years building B2B SaaS platforms, specializing in
+        AI-powered product features, complex third-party and Microsoft-ecosystem integrations,
+        and end-to-end solution ownership from architecture to production. Comfortable
+        translating business requirements into shipped systems within cross-functional,
+        stakeholder-facing teams.
+    experience:
+      - company: Innovandio GmbH
+        position: Senior Software Engineer
+        location: Berlin
+        start_date: 2023-10
+        end_date: 2026-05
+        summary: "**Tech Stack:** Ruby on Rails, Matestack, PostgreSQL, Redis, Vue.js,
+          Angular.js, Terraform, AWS"
+        highlights:
+          - Built an AI-powered billing pipeline integrating GitHub, calendar, video
+            call, and project management data that automated client reporting and reduced
+            it from a full day per month to 10 minutes per week
+          - Architected backend systems and integrations (Twilio, APNs, FCM, Microsoft
+            Graph API, Power BI, Timecard, POS payment terminals) for a multi-service
+            Rails platform powering 30+ car wash and gas stations across Germany and
+            Austria, serving 3,000+ users
+          - Developed custom Angular plugins on top of OpenProject's Rails backend for
+            Mercedes-AMG, covering agenda management, meeting minutes, and PowerPoint
+            exports
+          - Engineered CI/CD pipelines on AWS and GitHub Actions with Docker and SonarQube
+            quality gates, reducing deployment failures and release times
+      - company: Demodesk GmbH
+        position: Full Stack Software Engineer / Team Lead
+        location: Munich
+        start_date: 2022-02
+        end_date: 2023-09
+        summary: "**Tech Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Terraform,
+          Gitlab, AWS"
+        highlights:
+          - Led a team of ~10 engineers maintaining core backend services for a B2B SaaS
+            platform used by 20,000+ users
+          - Owned scheduling, Salesforce/HubSpot/Pipedrive integrations, user onboarding,
+            and core video workflows
+          - Shipped features end to end, from system design to production deployment
+          - Worked in a cross-functional feature team that integrated Google Meet to the
+            platform
+          - Reduced engineering backlog by ~40 percent during team lead period while
+            maintaining continuous feature delivery
+          - Refactored core modules and reduced codebase complexity by ~15 percent
+      - company: Setting HQ
+        position: Ruby on Rails Engineer (Intern)
+        location: Berlin
+        start_date: 2020-10
+        end_date: 2022-02
+        highlights:
+          - Optimized the platform's Office Search functionality, reducing page load
+            times by 45%.
+          - Developed an office onboarding system, digitizing a previous manual and
+            error-prone system
+          - Eliminated legacy dependencies by migrating the platform to a modern system
+            architecture
+    education:
+      - institution: Technische Universität Berlin
+        area: Business Informatics (Wirtschaftsinformatik)
+        degree: B.Sc.
+        start_date: 2018
+        end_date: 2022
+    skills:
+      - label: AI & Integrations
+        details: LLMs, AI-powered pipelines, Microsoft Graph API, REST APIs, CRMs, reporting
+      - label: Backend
+        details: Ruby on Rails, PostgreSQL, Redis
+      - label: Frontend
+        details: Vue.js, React, TypeScript
+      - label: DevOps
+        details: AWS, Terraform, Docker, CI/CD
+    languages:
+      - label: Languages
+        details: Spanish (native), English (fluent), German (fluent)
+design:
+  theme: engineeringresumes
+  page:
+    show_top_note: false
+    top_margin: 1.0cm
+    bottom_margin: 1.0cm
+    left_margin: 1.6cm
+    right_margin: 1.6cm
+  header:
+    space_below_name: 0.4cm
+    space_below_headline: 0.35cm
+    space_below_connections: 0.55cm
+    connections:
+      show_icons: true
+      hyperlink: true
+      display_urls_instead_of_usernames: false
+  section_titles:
+    space_above: 0.75cm
+    space_below: 0.25cm
+  sections:
+    space_between_regular_entries: 1em
+  templates:
+    experience_entry:
+      main_column: "**POSITION**, COMPANY -- LOCATION\nHIGHLIGHTS\nSUMMARY"
+      date_and_location_column: DATE
