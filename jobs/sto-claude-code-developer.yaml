@@ -1,0 +1,124 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+#
+# MASSGESCHNEIDERT — Sto Building Solutions "Claude Code Entwickler (w/m/d)" über etengo (CA-102145).
+# 6 Monate, vollständig remote, Deutschland. Deutsche Fassung, Berlin.
+# Stellenanzeige: https://www.etengo.de/it-projektsuche/102145/
+# Aus base-de.yaml angepasst: KI-gestützte Entwicklung (Claude), KI-Agenten,
+# Solution Architecture, JavaScript/TypeScript, REST-API-/Integrationsarchitektur,
+# TDD/Agile. Microsoft Graph/Power BI für Microsoft-Ökosystem-Bezug hervorgehoben.
+# Keine erfundenen Skills — Hinweis: Anzeige fordert Azure (Adrians Cloud ist AWS)
+# und Baustoff-/Baubranchen-Hintergrund (nicht vorhanden); beides wird nicht behauptet.
+cv:
+  name: Adrian Sanchez
+  headline: Senior Software Engineer — KI & Solution Architecture
+  location: Berlin, Deutschland
+  email: adrian@lisztostech.com
+  website: https://adrianisanchez.com
+  social_networks:
+    - network: LinkedIn
+      username: adrian-isaias-sanchez
+  sections:
+    Profil:
+      - Senior Software Engineer mit über 5 Jahren Erfahrung im Aufbau und Skalieren von
+        B2B-SaaS-Plattformen, mit Schwerpunkt auf Solution Architecture und KI-gestützten
+        Produktfeatures. Entwickelt KI-Agenten und LLM-basierte Pipelines, entwirft
+        REST-API- und Integrationsarchitekturen und nutzt KI-gestützte Entwicklung (Claude)
+        im Arbeitsalltag — von der Prototypisierung bis zur Produktion, in agilen Teams
+        mit ausgeprägter TDD-Disziplin.
+    Berufserfahrung:
+      - company: Innovandio GmbH
+        position: Senior Software Engineer
+        location: Berlin
+        start_date: 2023-10
+        end_date: 2026-05
+        summary: "**Tech-Stack:** Ruby on Rails, JavaScript/TypeScript, Vue.js, Angular.js,
+          REST APIs, PostgreSQL, Redis, AWS, Docker, Terraform"
+        highlights:
+          - Entwicklung einer KI-gestützten Abrechnungs-Pipeline (GitHub, Kalender, Videocalls,
+            Projektmanagement); automatisiertes Kundenreporting, Aufwand von einem Tag/Monat
+            auf 10 Minuten/Woche reduziert
+          - Definition von Systemarchitektur, Technologie-Stack und Integrationsdesign für
+            eine Multi-Service-Plattform mit über 30 Wasch- und Tankstellen in Deutschland
+            und Österreich, 3.000+ Nutzer
+          - Konzeption von REST-API-Integrationen (Twilio, Microsoft Graph API, Power BI,
+            POS-Zahlungsterminals) zur Anbindung von Drittanbieter-Services an eine
+            einheitliche Plattform
+          - Aufbau von CI/CD-Pipelines auf AWS und GitHub Actions mit Docker und SonarQube-Quality-Gates;
+            weniger Deployment-Fehler, kürzere Release-Zeiten
+      - company: Demodesk GmbH
+        position: Full Stack Software Engineer / Team Lead
+        location: München
+        start_date: 2022-02
+        end_date: 2023-09
+        summary: "**Tech-Stack:** Ruby on Rails, JavaScript/TypeScript, Vue.js, REST APIs,
+          PostgreSQL, Redis, AWS, Terraform, GitLab"
+        highlights:
+          - Leitung eines Teams von rund 10 Engineers für die zentralen Backend-Services
+            einer B2B-SaaS-Plattform mit über 20.000 Nutzern
+          - Umsetzung von Features end-to-end, vom Systemdesign und der Architektur bis zum
+            Produktions-Deployment
+          - Verantwortung für Terminplanung, Salesforce-/HubSpot-/Pipedrive-Integrationen,
+            User-Onboarding und zentrale Video-Workflows
+      - company: Setting HQ
+        position: Ruby on Rails Engineer (Werkstudent)
+        location: Berlin
+        start_date: 2020-10
+        end_date: 2022-02
+        highlights:
+          - Optimierung der Office-Search-Funktion, Reduktion der Ladezeiten um 45 %
+          - Entwicklung eines Onboarding-Systems für Offices; Digitalisierung eines zuvor
+            manuellen, fehleranfälligen Prozesses
+          - Ablösung von Legacy-Abhängigkeiten durch Migration auf eine moderne Systemarchitektur
+    Ausbildung:
+      - institution: Technische Universität Berlin
+        area: Wirtschaftsinformatik
+        degree: B.Sc.
+        start_date: 2018
+        end_date: 2022
+    Technische Kenntnisse:
+      - label: KI
+        details: KI-gestützte Entwicklung (Claude), KI-Agenten, LLM-Integrationen
+      - label: Sprachen & Frameworks
+        details: JavaScript/TypeScript, Vue.js, React, Angular.js, Ruby on Rails
+      - label: Architektur & Praktiken
+        details: Solution Architecture, REST APIs, Integrationsdesign, TDD, Scrum/Kanban
+      - label: DevOps
+        details: AWS, Docker, Terraform, CI/CD
+    Sprachen:
+      - Spanisch (Muttersprache), Englisch (verhandlungssicher), Deutsch (verhandlungssicher)
+locale:
+  language: german
+design:
+  theme: classic
+  colors:
+    name: rgb(0, 0, 0)
+    headline: rgb(0, 0, 0)
+    connections: rgb(0, 0, 0)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 0, 0)
+    footer: rgb(0, 0, 0)
+  page:
+    show_top_note: false
+    show_footer: false
+    top_margin: 1.0cm
+    bottom_margin: 1.0cm
+    left_margin: 1.6cm
+    right_margin: 1.6cm
+  header:
+    space_below_name: 0.4cm
+    space_below_headline: 0.35cm
+    space_below_connections: 0.55cm
+    connections:
+      show_icons: true
+      hyperlink: true
+      display_urls_instead_of_usernames: false
+  section_titles:
+    space_above: 0.75cm
+    space_below: 0.25cm
+  sections:
+    space_between_regular_entries: 1em
+    show_time_spans_in: []
+  templates:
+    experience_entry:
+      main_column: "**POSITION**, COMPANY\nHIGHLIGHTS\nSUMMARY"
+      date_and_location_column: "DATE\nLOCATION"
