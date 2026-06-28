@@ -76,14 +76,21 @@ cv:
       - label: Integrationen
         details: CRMs, LLMs, Payments, Reporting
     Sprachen:
-      - label: Sprachen
-        details: Spanisch (Muttersprache), Englisch (verhandlungssicher), Deutsch (verhandlungssicher)
+      - Spanisch (Muttersprache), Englisch (verhandlungssicher), Deutsch (verhandlungssicher)
 locale:
   language: german
 design:
-  theme: engineeringresumes
+  theme: classic
+  colors:
+    name: rgb(0, 0, 0)
+    headline: rgb(0, 0, 0)
+    connections: rgb(0, 0, 0)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 0, 0)
+    footer: rgb(0, 0, 0)
   page:
     show_top_note: false
+    show_footer: false
     top_margin: 1.0cm
     bottom_margin: 1.0cm
     left_margin: 1.6cm
@@ -101,7 +108,8 @@ design:
     space_below: 0.25cm
   sections:
     space_between_regular_entries: 1em
+    show_time_spans_in: []
   templates:
     experience_entry:
-      main_column: "**POSITION**, COMPANY -- LOCATION\nHIGHLIGHTS\nSUMMARY"
-      date_and_location_column: DATE
+      main_column: "**POSITION**, COMPANY\nHIGHLIGHTS\nSUMMARY"
+      date_and_location_column: "DATE\nLOCATION"
