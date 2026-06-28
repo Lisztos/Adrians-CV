@@ -94,9 +94,9 @@ design:
     left_margin: 1.6cm
     right_margin: 1.6cm
   header:
-    space_below_name: 0.3cm
-    space_below_headline: 0.2cm
-    space_below_connections: 0.3cm
+    space_below_name: 0.4cm
+    space_below_headline: 0.35cm
+    space_below_connections: 0.55cm
     connections:
       show_icons: true
       hyperlink: true
