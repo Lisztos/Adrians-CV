@@ -22,6 +22,8 @@ cv:
         location: Berlin
         start_date: 2023-10
         end_date: 2026-05
+        summary: "**Tech-Stack:** Ruby on Rails, Matestack, PostgreSQL, Redis, Vue.js,
+          Angular.js, Terraform, AWS"
         highlights:
           - Konzeption und Aufbau von Backend-Systemen und Integrationen (Twilio, Microsoft
             Graph API, Power BI, POS-Zahlungsterminals) für eine Multi-Service-Rails-Plattform
@@ -33,13 +35,13 @@ cv:
             auf 10 Minuten/Woche reduziert
           - "Entwicklung individueller Angular-Plugins auf Basis des OpenProject-Rails-Backends
             für Mercedes-AMG: Agenda-Verwaltung, Sitzungsprotokolle, PowerPoint-Exporte"
-          - "**Tech-Stack:** Ruby on Rails, Matestack, PostgreSQL, Redis, Vue.js, Angular.js,
-            Terraform, AWS"
       - company: Demodesk GmbH
         position: Full Stack Software Engineer / Team Lead
         location: München
         start_date: 2022-02
         end_date: 2023-09
+        summary: "**Tech-Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Terraform,
+          GitLab, AWS"
         highlights:
           - Leitung eines Teams von rund 10 Engineers für die zentralen Backend-Services
             einer B2B-SaaS-Plattform mit über 20.000 Nutzern
@@ -48,7 +50,6 @@ cv:
           - Verantwortung für Terminplanung, Salesforce-/HubSpot-/Pipedrive-Integrationen,
             User-Onboarding und zentrale Video-Workflows
           - Refactoring zentraler Module, Reduzierung der Codebase-Komplexität um rund 15 %
-          - "**Tech-Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Terraform, GitLab, AWS"
       - company: Setting HQ
         position: Ruby on Rails Engineer (Werkstudent)
         location: Berlin
@@ -99,3 +100,7 @@ design:
     space_below: 0.25cm
   sections:
     space_between_regular_entries: 1em
+  templates:
+    experience_entry:
+      main_column: "**POSITION**, COMPANY -- LOCATION\nHIGHLIGHTS\nSUMMARY"
+      date_and_location_column: DATE

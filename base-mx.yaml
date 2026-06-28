@@ -21,6 +21,8 @@ cv:
         location: Berlin
         start_date: 2023-10
         end_date: 2026-05
+        summary: "**Tech Stack:** Ruby on Rails, Matestack, PostgreSQL, Redis, Vue.js,
+          Angular.js, Terraform, AWS"
         highlights:
           - Architected backend systems and integrations (Twilio, APNs, FCM, Microsoft
             Graph API, Power BI, Timecard, POS payment terminals) for a multi-service
@@ -34,13 +36,13 @@ cv:
           - Developed custom Angular plugins on top of OpenProject's Rails backend for
             Mercedes-AMG, covering agenda management, meeting minutes, and PowerPoint
             exports
-          - "**Tech Stack:** Ruby on Rails, Matestack, PostgreSQL, Redis, Vue.js, Angular.js,
-            Terraform, AWS"
       - company: Demodesk GmbH
         position: Full Stack Software Engineer / Team Lead
         location: Munich
         start_date: 2022-02
         end_date: 2023-09
+        summary: "**Tech Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Terraform,
+          Gitlab, AWS"
         highlights:
           - Led a team of ~10 engineers maintaining core backend services for a B2B SaaS
             platform used by 20,000+ users
@@ -52,8 +54,6 @@ cv:
             and core video workflows
           - Shipped features end to end, from system design to production deployment
           - Refactored core modules and reduced codebase complexity by ~15 percent
-          - "**Tech Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Terraform, Gitlab,
-            AWS"
       - company: Setting HQ
         position: Ruby on Rails Engineer (Intern)
         location: Berlin
@@ -104,3 +104,7 @@ design:
     space_below: 0.25cm
   sections:
     space_between_regular_entries: 1em
+  templates:
+    experience_entry:
+      main_column: "**POSITION**, COMPANY -- LOCATION\nHIGHLIGHTS\nSUMMARY"
+      date_and_location_column: DATE
