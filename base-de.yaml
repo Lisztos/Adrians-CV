@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 #
-# DEUTSCHE FASSUNG — Sprachvariante des Master-CVs (siehe base.yaml für die englische Fassung).
+# DEUTSCHE FASSUNG: Sprachvariante des Master-CVs (siehe base.yaml für die englische Fassung).
 cv:
   name: Adrian Sanchez
   headline: Senior Software Engineer

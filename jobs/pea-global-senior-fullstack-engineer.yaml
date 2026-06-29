@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 #
-# TAILORED — PEA-Global "Senior Fullstack Engineer" (freelance, long-term, 100% remote). English, Berlin.
+# TAILORED: PEA-Global "Senior Fullstack Engineer" (freelance, long-term, 100% remote). English, Berlin.
 # Job posting: https://www.freelancermap.de/projekt/senior-fullstack-engineer-freelance
 # Tailored from base.yaml: fullstack framing, led with architecture/scalable design,
 # REST APIs, testing/quality, and cloud-native deployment. No fabricated skills.
@@ -16,7 +16,7 @@ cv:
   sections:
     summary:
       - Senior Fullstack Engineer with 5+ years building and scaling B2B SaaS platforms
-        end to end — from software architecture and REST APIs to frontend delivery and
+        end to end, from software architecture and REST APIs to frontend delivery and
         cloud-native deployment. Comfortable owning features from design to production
         in agile, cross-functional teams, with a strong focus on quality and automated
         testing.

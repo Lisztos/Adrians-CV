@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 #
-# ENGLISH — Mexico location variant of the master CV (see base.yaml).
+# ENGLISH: Mexico location variant of the master CV (see base.yaml).
 cv:
   name: Adrian Sanchez
   headline: Senior Software Engineer

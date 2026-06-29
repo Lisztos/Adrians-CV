@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
 #
-# MASTER CV — single source of truth.
+# MASTER CV: single source of truth.
 # Per-job tailored CVs are created as copies of this file (see README.md).
 cv:
   name: Adrian Sanchez
