@@ -42,6 +42,14 @@ cv:
       - "Adrian Sanchez"
 locale:
   language: german
+settings:
+  pdf_title: Adrian Sanchez - Anschreiben
+  render_command:
+    pdf_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.pdf
+    typst_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.typ
+    markdown_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.md
+    html_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.html
+    png_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.png
 design:
   theme: classic
   colors:

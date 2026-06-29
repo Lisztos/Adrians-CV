@@ -78,6 +78,43 @@ see one at a time and wouldn't inherit `base.yaml` improvements).
    git commit -m "Tailor CV for Acme Backend Engineer"
    ```
 
+## Cover letters (Anschreiben)
+
+A tailored application can include a cover letter alongside the CV. Name it
+`company-role-anschreiben.yaml` (German) — same `jobs/` folder, same convention.
+
+It's an ordinary RenderCV file that reuses the CV's header and `design` block
+(so the letterhead and styling match), with the letter written as plain-text
+paragraphs under a single section whose **title is the subject line (Betreff)**:
+
+```yaml
+cv:
+  # ...same name / headline / location / email / website / social_networks as the CV...
+  sections:
+    Bewerbung als <Rolle> – Referenz <Ref-Nr.>:   # section title = Betreff
+      - "<Empfänger>, z. Hd. <Ansprechpartner>"
+      - "<Ort>, <Datum>"
+      - "Sehr geehrte/r ...,"
+      - First body paragraph as a plain string.
+      - Second body paragraph...
+      - "Mit freundlichen Grüßen"
+      - "Adrian Sanchez"
+settings:                                          # rename output away from *_CV.*
+  pdf_title: Adrian Sanchez - Anschreiben
+  render_command:
+    pdf_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.pdf
+```
+
+Render it into its own folder so it doesn't collide with the CV:
+
+```bash
+./venv/bin/rendercv render jobs/acme-backend-engineer-anschreiben.yaml \
+  -o output/acme-backend-engineer-anschreiben
+```
+
+Keep a plain-text `company-role-anschreiben.md` next to it if you want an
+easily editable / copy-pasteable version; commit both `.yaml` and `.md`.
+
 ## Themes
 
 Bundled themes in v2.8: `classic`, `ember`, `engineeringclassic`, `engineeringresumes`,
@@ -96,6 +133,7 @@ printf "design:\n  theme: sb2nov\n" > /tmp/d.yaml
 | `base.yaml` | Master CV (English, Berlin) — single source of truth |
 | `base-de.yaml` | German variant |
 | `base-mx.yaml` | English variant, Cuernavaca/Mexico location |
-| `jobs/company-role.yaml` | Per-job tailored copies (committed) |
+| `jobs/company-role.yaml` | Per-job tailored CV copies (committed) |
+| `jobs/company-role-anschreiben.yaml` / `.md` | Per-job cover letter (committed) |
 | `rendercv_output/`, `output/` | Generated artifacts (git-ignored) |
 | `venv/` | Local Python env (git-ignored) |
