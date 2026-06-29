@@ -33,8 +33,11 @@ its section titles are written in German since the section key *is* the displaye
 ./venv/bin/rendercv render base.yaml
 ```
 
-Output lands in `rendercv_output/` (PDF, PNG, Markdown, HTML, and the `.typ` source).
-Output is git-ignored — it's always regenerated from YAML.
+Output lands in `rendercv_output/`. Each file's `settings.render_command` switches off
+Markdown, HTML, and PNG, so a render produces just the **PDF** plus its `.typ` source.
+(Typst can't be disabled on its own, since the PDF is compiled from it.) If you ever need a
+PNG for a quick visual check, set `dont_generate_png: false` in that file, or just open the
+PDF. Output is git-ignored, always regenerated from YAML.
 
 ## Per-job workflow
 

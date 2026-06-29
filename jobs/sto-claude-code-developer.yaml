@@ -88,6 +88,11 @@ cv:
       - Spanisch (Muttersprache), Englisch (verhandlungssicher), Deutsch (verhandlungssicher)
 locale:
   language: german
+settings:
+  render_command:
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
 design:
   theme: classic
   colors:

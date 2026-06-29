@@ -84,6 +84,11 @@ cv:
         details: CRMs, LLMs, payments, reporting
     languages:
       - Spanish (native), English (fluent), German (fluent)
+settings:
+  render_command:
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
 design:
   theme: classic
   colors:

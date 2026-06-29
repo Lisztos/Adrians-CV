@@ -48,9 +48,9 @@ settings:
   render_command:
     pdf_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.pdf
     typst_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.typ
-    markdown_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.md
-    html_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.html
-    png_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.png
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
 design:
   theme: classic
   colors:
