@@ -127,3 +127,7 @@ design:
     experience_entry:
       main_column: "**POSITION**, COMPANY\nHIGHLIGHTS\nSUMMARY"
       date_and_location_column: "DATE\nLOCATION"
+    education_entry:
+      main_column: "**DEGREE AREA**\nINSTITUTION\nHIGHLIGHTS\nSUMMARY"
+      date_and_location_column: "DATE\nLOCATION"
+      degree_column: null
