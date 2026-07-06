@@ -41,9 +41,19 @@ PDF. Output is git-ignored, always regenerated from YAML.
 
 ## Per-job workflow
 
-Everything stays on `main` — one file per application under `jobs/`. No branches:
+> The end-to-end flow is automated by the **`tailor-cv` skill** (`.claude/skills/tailor-cv/`):
+> paste a job posting URL and it assesses fit, creates the tailored YAML, renders, verifies
+> the PDF, and drafts a cover letter. The steps below are what that skill does — do them by
+> hand when tailoring manually.
+
+Everything stays on `main` — one application per job under `jobs/`. No branches:
 job CVs are independent, permanent artifacts that coexist (a branch would only let you
 see one at a time and wouldn't inherit `base.yaml` improvements).
+
+Each job has two things: a **flat YAML source** (`jobs/<slug>.yaml`) and a **deliverables
+folder** (`jobs/<slug>/`) that holds only the final PDF(s) and cover letter. Both are
+committed — the curated `jobs/<slug>/` PDFs are checked in even though raw render output
+elsewhere is git-ignored.
 
 1. **Copy a master** into `jobs/`, naming it `company-role.yaml`:
 
@@ -66,27 +76,35 @@ see one at a time and wouldn't inherit `base.yaml` improvements).
    - `skills` — surface the stack the posting asks for first.
    - `design.theme` — leave as-is unless a company expects a specific look.
 
-4. **Render the tailored file** into its own folder so PDFs don't collide:
+4. **Render to a scratch dir, then copy only the PDF** into the job folder. RenderCV resolves
+   `-o` relative to the YAML and always emits a `.typ` alongside the PDF, so never render
+   straight into `jobs/`:
 
    ```bash
-   ./venv/bin/rendercv render jobs/acme-backend-engineer.yaml -o output/acme-backend-engineer
+   ./venv/bin/rendercv render jobs/acme-backend-engineer.yaml -o /tmp/acme-backend-engineer
+   mkdir -p jobs/acme-backend-engineer
+   cp /tmp/acme-backend-engineer/Adrian_Sanchez_CV.pdf jobs/acme-backend-engineer/
    ```
 
-   The final PDF: `output/acme-backend-engineer/Adrian_Sanchez_CV.pdf`.
+   The deliverables folder `jobs/acme-backend-engineer/` should contain **only** the final
+   PDF(s) and cover letter — no `.typ`, no nested render dirs.
 
-5. **Commit the YAML** (not the PDF — it's regeneratable):
+5. **Commit the YAML source and the deliverables folder** (the PDF here is a committed artifact):
 
    ```bash
-   git add jobs/acme-backend-engineer.yaml
+   git add jobs/acme-backend-engineer.yaml jobs/acme-backend-engineer/
    git commit -m "Tailor CV for Acme Backend Engineer"
    ```
 
 ## Cover letters (Anschreiben)
 
-A tailored application can include a cover letter alongside the CV. Name it
-`company-role-anschreiben.yaml` (German) — same `jobs/` folder, same convention.
+A tailored application can include a cover letter alongside the CV. A plain-text letter
+lives in the job folder as `jobs/<slug>/cover-letter.md` (English) or
+`jobs/<slug>/anschreiben.md` (German). If you also want a styled PDF that matches the CV
+letterhead, write a separate `jobs/<company-role>-anschreiben.yaml` source and copy its
+rendered PDF into `jobs/<slug>/` (e.g. `Adrian_Sanchez_Anschreiben.pdf`).
 
-It's an ordinary RenderCV file that reuses the CV's header and `design` block
+The `-anschreiben.yaml` is an ordinary RenderCV file that reuses the CV's header and `design` block
 (so the letterhead and styling match), with the letter written as plain-text
 paragraphs under a single section whose **title is the subject line (Betreff)**:
 
@@ -108,15 +126,15 @@ settings:                                          # rename output away from *_C
     pdf_path: OUTPUT_FOLDER/Adrian_Sanchez_Anschreiben.pdf
 ```
 
-Render it into its own folder so it doesn't collide with the CV:
+Render it to a scratch dir, then copy the PDF into the job's deliverables folder so it
+sits next to the CV:
 
 ```bash
 ./venv/bin/rendercv render jobs/acme-backend-engineer-anschreiben.yaml \
-  -o output/acme-backend-engineer-anschreiben
+  -o /tmp/acme-backend-engineer-anschreiben
+cp /tmp/acme-backend-engineer-anschreiben/Adrian_Sanchez_Anschreiben.pdf \
+  jobs/acme-backend-engineer/
 ```
-
-Keep a plain-text `company-role-anschreiben.md` next to it if you want an
-easily editable / copy-pasteable version; commit both `.yaml` and `.md`.
 
 ## Themes
 
@@ -136,7 +154,9 @@ printf "design:\n  theme: sb2nov\n" > /tmp/d.yaml
 | `base.yaml` | Master CV (English, Berlin) — single source of truth |
 | `base-de.yaml` | German variant |
 | `base-mx.yaml` | English variant, Cuernavaca/Mexico location |
-| `jobs/company-role.yaml` | Per-job tailored CV copies (committed) |
-| `jobs/company-role-anschreiben.yaml` / `.md` | Per-job cover letter (committed) |
-| `rendercv_output/`, `output/` | Generated artifacts (git-ignored) |
+| `jobs/company-role.yaml` | Per-job tailored CV source (committed, flat) |
+| `jobs/company-role-anschreiben.yaml` | Optional per-job cover-letter source (committed, flat) |
+| `jobs/company-role/` | Per-job deliverables folder — final PDF(s) + `cover-letter.md`/`anschreiben.md` (committed) |
+| `.claude/skills/tailor-cv/` | Skill that automates the per-job workflow end to end |
+| `rendercv_output/`, `output/` | Raw render output (git-ignored, always regenerated) |
 | `venv/` | Local Python env (git-ignored) |
