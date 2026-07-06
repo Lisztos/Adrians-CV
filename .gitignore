@@ -11,3 +11,7 @@ output/
 
 # OS
 .DS_Store
+
+# TLDR tooling (local cache / daemon state)
+.tldr/
+.tldrignore
