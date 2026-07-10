@@ -14,6 +14,11 @@ Installed: RenderCV v2.8 (Typst engine). YAML schema is pinned in each file's fi
 (`$schema=...refs/tags/v2.8/schema.json`). If you upgrade RenderCV, run `rendercv new "X"`
 again to diff the schema — key names change across versions.
 
+> **Always call the venv binary: `./venv/bin/rendercv` — there is no global install.**
+> A bare `rendercv render ...` fails with `command not found`. And you must install the
+> `[full]` extra (`pip install "rendercv[full]"`, as above) — plain `rendercv` lacks the
+> Typst engine and can't produce a PDF. These two are the usual reasons a render fails.
+
 ## Variants
 
 There are several master variants. Render each into its own output folder:
