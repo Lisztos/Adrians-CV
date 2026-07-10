@@ -1,0 +1,131 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+# Job: Montash GmbH (via freelancermap) — Full Stack Developer, Infrastructure/Frontend Focus, 12 months, 100% remote — https://www.freelancermap.de/projekt/full-stack-developer-infrastructure-frontend-focus
+cv:
+  name: Adrian Sanchez
+  headline: Senior Full-Stack Developer | Frontend & Cloud Infrastructure
+  location: Berlin, Germany
+  email: adrian@lisztostech.com
+  website: https://adrianisanchez.com
+  social_networks:
+    - network: LinkedIn
+      username: adrian-isaias-sanchez
+  sections:
+    summary:
+      - Senior full-stack developer with 5+ years building user interfaces and
+        cloud infrastructure for B2B platforms. Customizes platform products
+        with frontend components, sets up AWS infrastructure with Terraform
+        and Docker, manages CI/CD pipelines, and integrates APIs. Works
+        directly with product owners to translate functional requirements
+        into technical solutions.
+    experience:
+      - company: Innovandio GmbH
+        position: Senior Software Engineer
+        location: Berlin (remote)
+        start_date: 2023-10
+        end_date: 2026-05
+        summary: "**Tech Stack:** Angular.js, Vue.js, Ruby on Rails,
+          PostgreSQL, Redis, Terraform, Docker, AWS"
+        highlights:
+          - Developed custom Angular frontend plugins on top of the
+            OpenProject platform for Mercedes-AMG, translating client
+            requirements into UI components for agenda management, meeting
+            minutes, and PowerPoint exports
+          - Established and maintained AWS cloud infrastructure with Terraform
+            and engineered CI/CD pipelines on GitHub Actions with Docker and
+            SonarQube quality gates, reducing deployment failures and release
+            times
+          - Architected API integrations (Microsoft Graph API, Power BI,
+            Twilio, APNs, FCM, POS payment terminals) for a multi-service
+            platform powering 30+ locations and 3,000+ users across Germany
+            and Austria
+      - company: Demodesk GmbH
+        position: Full Stack Software Engineer / Team Lead
+        location: Munich (remote)
+        start_date: 2022-02
+        end_date: 2023-09
+        summary: "**Tech Stack:** Vue.js, Ruby on Rails, PostgreSQL, Redis,
+          Terraform, Gitlab, AWS"
+        highlights:
+          - Shipped frontend and backend features end to end for a B2B SaaS
+            platform used by 20,000+ users, from system design with product
+            managers and designers to production deployment
+          - Owned API integrations with Salesforce, HubSpot, Pipedrive, and
+            Google Meet, plus scheduling, user onboarding, and core video
+            workflows
+          - Led a team of ~10 engineers, conducting code reviews and cutting
+            engineering backlog by ~40 percent while maintaining continuous
+            feature delivery
+          - Refactored core modules and reduced codebase complexity by ~15
+            percent, improving system reliability and performance
+      - company: Setting HQ
+        position: Software Engineer (Intern)
+        location: Berlin
+        start_date: 2020-10
+        end_date: 2022-02
+        highlights:
+          - Optimized the platform's Office Search functionality, reducing
+            page load times by 45%
+          - Developed an office onboarding system, digitizing a previously
+            manual and error-prone process
+          - Eliminated legacy dependencies by migrating the platform to a
+            modern system architecture
+    education:
+      - institution: Technische Universität Berlin
+        area: Business Informatics (Wirtschaftsinformatik)
+        degree: B.Sc.
+        start_date: 2018
+        end_date: 2022
+    skills:
+      - label: Frontend
+        details: JavaScript, TypeScript, HTML5, CSS, Angular, Vue.js, React
+      - label: Infrastructure
+        details: AWS, Terraform, Docker, Git, CI/CD (GitHub Actions, GitLab)
+      - label: Backend
+        details: Ruby on Rails, PostgreSQL, Redis, REST APIs
+      - label: Integrations
+        details: Microsoft Graph, Power BI, CRMs, payments, LLMs
+    languages:
+      - Spanish (native), English (fluent), German (fluent)
+settings:
+  render_command:
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
+design:
+  theme: classic
+  colors:
+    name: rgb(0, 0, 0)
+    headline: rgb(0, 0, 0)
+    connections: rgb(0, 0, 0)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 0, 0)
+    footer: rgb(0, 0, 0)
+  page:
+    show_top_note: false
+    show_footer: false
+    top_margin: 1.0cm
+    bottom_margin: 1.0cm
+    left_margin: 1.6cm
+    right_margin: 1.6cm
+  header:
+    space_below_name: 0.4cm
+    space_below_headline: 0.35cm
+    space_below_connections: 0.55cm
+    connections:
+      show_icons: true
+      hyperlink: true
+      display_urls_instead_of_usernames: false
+  section_titles:
+    space_above: 0.75cm
+    space_below: 0.25cm
+  sections:
+    space_between_regular_entries: 1em
+    show_time_spans_in: []
+  templates:
+    experience_entry:
+      main_column: "**POSITION**, COMPANY\nHIGHLIGHTS\nSUMMARY"
+      date_and_location_column: "DATE\nLOCATION"
+    education_entry:
+      main_column: "**DEGREE AREA**\nINSTITUTION\nHIGHLIGHTS\nSUMMARY"
+      date_and_location_column: "DATE\nLOCATION"
+      degree_column: null
