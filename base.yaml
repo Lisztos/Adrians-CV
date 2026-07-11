@@ -77,7 +77,7 @@ cv:
       - label: Backend
         details: Ruby on Rails, PostgreSQL, Redis
       - label: Frontend
-        details: Vue.js, React, TypeScript
+        details: Vue.js, TypeScript
       - label: DevOps
         details: AWS, Terraform, Docker, CI/CD
       - label: Integrations

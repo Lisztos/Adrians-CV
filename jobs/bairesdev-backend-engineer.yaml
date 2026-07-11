@@ -13,8 +13,8 @@ cv:
     summary:
       - Backend engineer with 5+ years building B2B SaaS platforms on Ruby on Rails
         and PostgreSQL. Owns backend architecture, complex third-party integrations,
-        and deployment on AWS, with end-to-end responsibility across APIs and
-        infrastructure.
+        background processing, and deployment on AWS, with RSpec-tested code and
+        end-to-end responsibility across APIs and infrastructure.
     experience:
       - company: Innovandio GmbH
         position: Senior Software Engineer
@@ -74,13 +74,13 @@ cv:
         end_date: 2022
     skills:
       - label: Backend
-        details: Ruby on Rails, PostgreSQL, Redis
+        details: Ruby on Rails, PostgreSQL, Redis, RSpec, background jobs
       - label: DevOps
         details: AWS, Docker, Terraform, CI/CD
       - label: Integrations
         details: CRMs, LLMs, payments, reporting
       - label: Frontend
-        details: Vue.js, React, TypeScript
+        details: Vue.js, TypeScript
     languages:
       - Spanish (native), English (fluent), German (fluent)
 settings:
