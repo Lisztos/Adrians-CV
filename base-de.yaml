@@ -17,6 +17,20 @@ cv:
         und KI-gestützten Produktfeatures, inklusive End-to-End-Verantwortung von der API
         bis zur Infrastruktur.
     Berufserfahrung:
+      - company: OneCall (Florida, USA)
+        position: Full Stack Software Engineer
+        location: Remote, Mexiko
+        start_date: 2026-08
+        end_date: present
+        summary: "**Tech-Stack:** .NET Core"
+        highlights:
+          - Wartung und Weiterentwicklung der zentralen Unternehmensplattform, eines gewachsenen
+            Legacy-Systems auf .NET Core, im Physical-Medicine-Team
+          - Gezielt eingestellt, um KI-Know-how in die Legacy-Plattform einzubringen, als Teil
+            der unternehmensweiten Initiative für schlankere Prozesse und schnellere Entwicklung
+          - Entwicklung neuer Features für die Kernplattform
+          - Abteilungsübergreifende Zusammenarbeit zur Verbesserung der Plattform und Verkürzung
+            der Zeit vom Kundeneingang bis zum Go-live
       - company: Innovandio GmbH
         position: Senior Software Engineer
         location: Berlin
@@ -68,7 +82,7 @@ cv:
         end_date: 2022
     Technische Kenntnisse:
       - label: Backend
-        details: Ruby on Rails, PostgreSQL, Redis
+        details: Ruby on Rails, .NET Core, PostgreSQL, Redis
       - label: Frontend
         details: Vue.js, TypeScript
       - label: DevOps
@@ -76,7 +90,7 @@ cv:
       - label: Integrationen
         details: CRMs, LLMs, Payments, Reporting
     Sprachen:
-      - Spanisch (Muttersprache), Englisch (verhandlungssicher), Deutsch (verhandlungssicher)
+      - Spanisch (Muttersprache), Deutsch (C1), Englisch (C1), Französisch (B1)
 locale:
   language: german
 settings:

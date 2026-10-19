@@ -21,13 +21,15 @@ again to diff the schema — key names change across versions.
 
 ## Variants
 
-There are several master variants. Render each into its own output folder:
+There are five master variants: three general ones and two for the Swiss market. Render each into its own output folder:
 
 | File | Language | Location | Render command |
 |------|----------|----------|----------------|
 | `base.yaml` | English | Berlin, Germany | `./venv/bin/rendercv render base.yaml` |
 | `base-de.yaml` | German | Berlin, Deutschland | `./venv/bin/rendercv render base-de.yaml -o rendercv_output/de` |
 | `base-mx.yaml` | English | Cuernavaca, Mexico | `./venv/bin/rendercv render base-mx.yaml -o rendercv_output/mx` |
+| `base-ch.yaml` | English | Basel, Switzerland | `./venv/bin/rendercv render base-ch.yaml -o rendercv_output/ch` |
+| `base-ch-de.yaml` | German | Basel, Schweiz | `./venv/bin/rendercv render base-ch-de.yaml -o rendercv_output/ch-de` |
 
 The German file sets `locale: language: german`, which localizes dates (e.g. `Okt 2023 – Mai 2026`);
 its section titles are written in German since the section key *is* the displayed heading.
@@ -156,9 +158,12 @@ printf "design:\n  theme: sb2nov\n" > /tmp/d.yaml
 
 | File | Purpose |
 |------|---------|
-| `base.yaml` | Master CV (English, Berlin) — single source of truth |
-| `base-de.yaml` | German variant |
+| `base.yaml` | Master CV (English, Berlin): single source of truth |
+| `base-de.yaml` | German variant (Berlin) |
 | `base-mx.yaml` | English variant, Cuernavaca/Mexico location |
+| `base-ch.yaml` | Swiss master (English, Basel, photo, engineeringclassic design) |
+| `base-ch-de.yaml` | Swiss master (German, Basel, Swiss Standard German) |
+| `photo.jpg` | CV photo for the Swiss bases |
 | `jobs/company-role.yaml` | Per-job tailored CV source (committed, flat) |
 | `jobs/company-role-anschreiben.yaml` | Optional per-job cover-letter source (committed, flat) |
 | `jobs/company-role/` | Per-job deliverables folder — final PDF(s) + `cover-letter.md`/`anschreiben.md` (committed) |

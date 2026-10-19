@@ -9,17 +9,39 @@ job posting URL is shared.
 
 | Path | What it is |
 |------|-----------|
-| `base.yaml` | Master CV, English, Berlin — single source of truth |
-| `base-de.yaml` | German variant (localized dates, German section titles) |
+| `base.yaml` | Master CV, English, Berlin: single source of truth |
+| `base-de.yaml` | German variant, Berlin (localized dates, German section titles) |
 | `base-mx.yaml` | English variant, Cuernavaca/Mexico location |
+| `base-ch.yaml` | Swiss master, English, Basel, photo, `engineeringclassic` design |
+| `base-ch-de.yaml` | Swiss master, German (Swiss Standard German), Basel, photo |
+| `photo.jpg` | CV photo used by the Swiss bases (currently a placeholder) |
 | `jobs/<company-role>.yaml` | Per-job tailored CV source (flat, committed) |
 | `jobs/<company-role>-anschreiben.yaml` | Optional cover-letter source (flat, committed) |
 | `jobs/<company-role>/` | Deliverables folder: final PDF(s) + cover letter ONLY (committed) |
 | `rendercv_output/`, `output/`, `*_output/` | Raw render output (git-ignored) |
 | `venv/` | Local Python env (git-ignored) |
 
-Pick the base by the posting's language/target location: English → `base.yaml`,
-German → `base-de.yaml`, LATAM/Mexico-targeted → `base-mx.yaml`.
+Pick the base by target market, then language:
+
+- Switzerland (the main target since 2026-10): English → `base-ch.yaml`,
+  German → `base-ch-de.yaml`.
+- Everywhere else: English → `base.yaml`, German → `base-de.yaml`,
+  LATAM/Mexico → `base-mx.yaml`. No photo, one page, `classic` design.
+
+Content changes (new jobs, bullets, skills) go into all five bases.
+
+## Swiss market conventions (`-ch` bases and their per-job copies only)
+
+- Header shows Basel, Swiss phone, nationality (German, Mexican) and a photo
+  (`photo.jpg` in the repo root; currently a placeholder). No date of birth (user choice).
+- Languages use CEFR levels: Spanish native, German C1, English C1, French B1.
+- German text uses Swiss Standard German: `ss` instead of Eszett, `3’000` as thousands
+  separator (type the real apostrophe U+2019; Typst renders `'` as a prime).
+- English text uses British spelling.
+- Keep the timeline gapless and keep the "References on request" section.
+- Design: `engineeringclassic` theme (chosen 2026-10), Raleway for name/headings, Lato for
+  body text (Raleway's old-style numerals misrender 3’000). No top note; page footer kept.
+  Overriding one `font_family` key resets the others, so always set all five.
 
 ## Rendering
 
@@ -42,7 +64,8 @@ German → `base-de.yaml`, LATAM/Mexico-targeted → `base-mx.yaml`.
 - **Never invent experience.** Only reorder, trim, or reword what exists in the base
   YAML. Past incident: a hallucinated "Power BI Caching" skill. If a posting's must-have
   is missing from the base, say so in the fit assessment instead of adding it.
-- **One page.** After every render, Read the PDF and verify: single page, no duplicated
+- **Page limit.** Non-Swiss CVs: one page. Swiss CVs: two pages max, but never a stub
+  second page with one or two short sections. After every render, Read the PDF and verify: page count, no duplicated
   sections (there was once a double "Languages" bug), sane spacing. Trim least-relevant
   bullets and tighten the summary until it fits. Never report done without this check.
 - Give an honest fit assessment (strengths AND gaps) before tailoring.
