@@ -1,0 +1,122 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+# Stellenanzeige: https://www.garaio-rem.ch/de/jobs/senior-ruby-on-rails-engineer
+# MASSGESCHNEIDERT: GARAIO REM AG "Senior Ruby on Rails Engineer (m/w/d)", Bern, 80-100 %, hybrid.
+# Deutsche Fassung, Basel.
+cv:
+  name: Adrian Sanchez
+  photo: ../photo.jpg  # placeholder, replace photo.jpg with the real photo
+  headline: Senior Ruby on Rails Engineer
+  location: Basel, Schweiz
+  email: adrian@lisztostech.com
+  phone: "+41774566973"
+  website: https://adrianisanchez.com
+  social_networks:
+    - network: LinkedIn
+      username: adrian-isaias-sanchez
+  custom_connections:
+    - fontawesome_icon: passport
+      placeholder: "Staatsangehörigkeit: Deutsch, Mexikanisch"
+      url: null
+  sections:
+    Profil:
+      - Senior Software Engineer mit über 5 Jahren Erfahrung im Aufbau von B2B-SaaS-Plattformen
+        mit Ruby on Rails. Schwerpunkte liegen auf Rails-Backends, komplexen
+        Drittanbieter-Integrationen sowie Deployment-Prozessen und Infrastruktur (Docker, CI/CD,
+        AWS), inklusive End-to-End-Verantwortung von der API bis zur Infrastruktur.
+    Berufserfahrung:
+      - company: OneCall (Florida, USA)
+        position: Full Stack Software Engineer
+        location: Remote, Mexiko
+        start_date: 2026-08
+        end_date: present
+        summary: "**Tech-Stack:** .NET Core"
+        highlights:
+          - Wartung und Weiterentwicklung der zentralen Unternehmensplattform, eines gewachsenen
+            Legacy-Systems auf .NET Core, im Physical-Medicine-Team
+          - Gezielt eingestellt, um KI-Know-how in die Legacy-Plattform einzubringen, als Teil
+            der unternehmensweiten Initiative für schlankere Prozesse und schnellere Entwicklung
+          - Entwicklung neuer Features für die Kernplattform
+          - Abteilungsübergreifende Zusammenarbeit zur Verbesserung der Plattform und Verkürzung
+            der Zeit vom Kundeneingang bis zum Go-live
+      - company: Innovandio GmbH
+        position: Senior Software Engineer
+        location: Berlin
+        start_date: 2023-10
+        end_date: 2026-05
+        summary: "**Tech-Stack:** Ruby on Rails, Matestack, PostgreSQL, Redis, Vue.js,
+          Angular.js, Terraform, AWS"
+        highlights:
+          - Konzeption und Aufbau von Backend-Systemen und Integrationen (Twilio, Microsoft
+            Graph API, Power BI, POS-Zahlungsterminals) für eine Multi-Service-Rails-Plattform
+            mit über 30 Wasch- und Tankstellen in Deutschland und Österreich, 3’000+ Nutzer
+          - Aufbau von CI/CD-Pipelines auf AWS und GitHub Actions mit Docker und SonarQube-Quality-Gates;
+            weniger Deployment-Fehler, kürzere Release-Zeiten
+          - Entwicklung einer KI-gestützten Abrechnungs-Pipeline (GitHub, Kalender, Videocalls,
+            Projektmanagement); automatisiertes Kundenreporting, Aufwand von einem Tag/Monat
+            auf 10 Minuten/Woche reduziert
+          - "Entwicklung individueller Angular-Plugins auf Basis des OpenProject-Rails-Backends
+            für Mercedes-AMG: Agenda-Verwaltung, Sitzungsprotokolle, PowerPoint-Exporte"
+      - company: Demodesk GmbH
+        position: Full Stack Software Engineer / Team Lead
+        location: München
+        start_date: 2022-02
+        end_date: 2023-09
+        summary: "**Tech-Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Terraform,
+          GitLab, AWS"
+        highlights:
+          - Leitung eines Teams von rund 10 Engineers für die zentralen Backend-Services
+            einer B2B-SaaS-Plattform mit über 20’000 Nutzern
+          - Verantwortung für Terminplanung, Salesforce-/HubSpot-/Pipedrive-Integrationen,
+            User-Onboarding und zentrale Video-Workflows
+          - Refactoring zentraler Module, Reduzierung der Codebase-Komplexität um rund 15 %
+          - Reduzierung des Engineering-Backlogs um rund 40 % als Team Lead bei kontinuierlicher
+            Feature-Auslieferung
+      - company: Setting HQ
+        position: Ruby on Rails Engineer (Werkstudent)
+        location: Berlin
+        start_date: 2020-10
+        end_date: 2022-02
+        highlights:
+          - Ablösung von Legacy-Abhängigkeiten durch Migration auf eine moderne Systemarchitektur
+          - Optimierung der Office-Search-Funktion, Reduktion der Ladezeiten um 45 %
+          - Entwicklung eines Onboarding-Systems für Offices; Digitalisierung eines zuvor
+            manuellen, fehleranfälligen Prozesses
+    Ausbildung:
+      - institution: Technische Universität Berlin
+        area: Wirtschaftsinformatik
+        degree: B.Sc.
+        start_date: 2018
+        end_date: 2022
+    Technische Kenntnisse:
+      - label: Backend
+        details: Ruby on Rails, PostgreSQL, Redis
+      - label: DevOps
+        details: Docker, CI/CD, GitLab, GitHub Actions, AWS, Terraform
+      - label: Integrationen
+        details: CRMs, Payments, Reporting, LLMs
+      - label: Frontend
+        details: Vue.js, TypeScript
+    Sprachen:
+      - Spanisch (Muttersprache), Deutsch (C1), Englisch (C1), Französisch (B1)
+    Referenzen:
+      - Auf Anfrage
+locale:
+  language: german
+settings:
+  render_command:
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
+design:
+  theme: engineeringclassic
+  typography:
+    font_family:
+      # Raleway (theme default) only has old-style numerals, so 3'000 reads as 3'ooo.
+      # Keep it for name and headings, use Lato for running text.
+      body: Lato
+      connections: Lato
+      name: Raleway
+      headline: Raleway
+      section_titles: Raleway
+  page:
+    show_top_note: false
