@@ -5,7 +5,7 @@
 # Schweizer Schreibweise: ss statt Eszett, 3’000.
 cv:
   name: Adrian Sanchez
-  photo: photo.jpg  # placeholder, replace photo.jpg with the real photo
+  photo: photo.jpg
   headline: Senior Software Engineer
   location: Basel, Schweiz
   email: adrian@lisztostech.com

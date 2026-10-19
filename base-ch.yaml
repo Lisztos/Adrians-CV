@@ -6,7 +6,7 @@
 # Per-job tailored CVs are created as copies of this file (see README.md).
 cv:
   name: Adrian Sanchez
-  photo: photo.jpg  # placeholder, replace photo.jpg with the real photo
+  photo: photo.jpg
   headline: Senior Software Engineer
   location: Basel, Switzerland
   email: adrian@lisztostech.com

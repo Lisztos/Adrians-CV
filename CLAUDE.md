@@ -14,7 +14,7 @@ job posting URL is shared.
 | `base-mx.yaml` | English variant, Cuernavaca/Mexico location |
 | `base-ch.yaml` | Swiss master, English, Basel, photo, `engineeringclassic` design |
 | `base-ch-de.yaml` | Swiss master, German (Swiss Standard German), Basel, photo |
-| `photo.jpg` | CV photo used by the Swiss bases (currently a placeholder) |
+| `photo.jpg` | CV photo used by the Swiss bases (600x800, 3:4) |
 | `jobs/<company-role>.yaml` | Per-job tailored CV source (flat, committed) |
 | `jobs/<company-role>-anschreiben.yaml` | Optional cover-letter source (flat, committed) |
 | `jobs/<company-role>/` | Deliverables folder: final PDF(s) + cover letter ONLY (committed) |
@@ -33,7 +33,7 @@ Content changes (new jobs, bullets, skills) go into all five bases.
 ## Swiss market conventions (`-ch` bases and their per-job copies only)
 
 - Header shows Basel, Swiss phone, nationality (German, Mexican) and a photo
-  (`photo.jpg` in the repo root; currently a placeholder). No date of birth (user choice).
+  (`photo.jpg` in the repo root, 600x800 portrait crop). No date of birth (user choice).
 - Languages use CEFR levels: Spanish native, German C1, English C1, French B1.
 - German text uses Swiss Standard German: `ss` instead of Eszett, `3’000` as thousands
   separator (type the real apostrophe U+2019; Typst renders `'` as a prime).
