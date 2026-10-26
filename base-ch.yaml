@@ -32,13 +32,10 @@ cv:
         end_date: present
         summary: "**Tech Stack:** .NET Core"
         highlights:
-          - Maintain and extend the company's core platform, a long-standing legacy system on
-            .NET Core, as part of the Physical Medicine team
-          - Hired to bring AI expertise to the legacy platform as the company scaled up its use
-            of AI to streamline processes and accelerate development
-          - Develop new features for the core platform
-          - Work across departments to improve the platform and shorten the time from customer
-            intake to go-live
+          - Maintain and build new features for a .NET Core platform in the Physical Medicine
+            division
+          - Accelerate AI adoption across development and internal processes
+          - Work with other departments to shorten customer onboarding, from intake to launch
       - company: Innovandio GmbH
         position: Senior Software Engineer
         location: Berlin

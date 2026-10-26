@@ -32,13 +32,11 @@ cv:
         end_date: present
         summary: "**Tech-Stack:** .NET Core"
         highlights:
-          - Wartung und Weiterentwicklung der zentralen Unternehmensplattform, eines gewachsenen
-            Legacy-Systems auf .NET Core, im Physical-Medicine-Team
-          - Gezielt eingestellt, um KI-Know-how in die Legacy-Plattform einzubringen, als Teil
-            der unternehmensweiten Initiative für schlankere Prozesse und schnellere Entwicklung
-          - Entwicklung neuer Features für die Kernplattform
-          - Abteilungsübergreifende Zusammenarbeit zur Verbesserung der Plattform und Verkürzung
-            der Zeit vom Kundeneingang bis zum Go-live
+          - Wartung und Entwicklung neuer Features für eine .NET-Core-Plattform im Bereich
+            Physical Medicine
+          - Beschleunigung der KI-Einführung in Entwicklung und internen Prozessen
+          - Abteilungsübergreifende Zusammenarbeit für schnelleres Kunden-Onboarding bis zum
+            Go-live
       - company: Innovandio GmbH
         position: Senior Software Engineer
         location: Berlin
