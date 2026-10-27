@@ -15,3 +15,6 @@ output/
 # TLDR tooling (local cache / daemon state)
 .tldr/
 .tldrignore
+
+# Claude Code tool cache
+.claude/tsc-cache/
