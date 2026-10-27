@@ -166,7 +166,7 @@ printf "design:\n  theme: sb2nov\n" > /tmp/d.yaml
 | `photo.jpg` | CV photo for the Swiss bases |
 | `jobs/company-role.yaml` | Per-job tailored CV source (committed, flat) |
 | `jobs/company-role-anschreiben.yaml` | Optional per-job cover-letter source (committed, flat) |
-| `jobs/company-role/` | Per-job deliverables folder — final PDF(s) + `cover-letter.md`/`anschreiben.md` (committed) |
+| `jobs/company-role/` | Per-job deliverables folder — final PDF(s) + `cover-letter.md`/`anschreiben.md` + application answers (committed) |
 | `.claude/skills/tailor-cv/` | Skill that automates the per-job workflow end to end |
 | `rendercv_output/`, `output/` | Raw render output (git-ignored, always regenerated) |
 | `venv/` | Local Python env (git-ignored) |

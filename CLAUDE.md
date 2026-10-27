@@ -17,7 +17,7 @@ job posting URL is shared.
 | `photo.jpg` | CV photo used by the Swiss bases (600x800, 3:4) |
 | `jobs/<company-role>.yaml` | Per-job tailored CV source (flat, committed) |
 | `jobs/<company-role>-anschreiben.yaml` | Optional cover-letter source (flat, committed) |
-| `jobs/<company-role>/` | Deliverables folder: final PDF(s) + cover letter ONLY (committed) |
+| `jobs/<company-role>/` | Deliverables folder: final PDF(s), cover letter, application answers ONLY (committed) |
 | `rendercv_output/`, `output/`, `*_output/` | Raw render output (git-ignored) |
 | `venv/` | Local Python env (git-ignored) |
 
@@ -65,13 +65,15 @@ Content changes (new jobs, bullets, skills) go into all five bases.
   YAML. Past incident: a hallucinated "Power BI Caching" skill. If a posting's must-have
   is missing from the base, say so in the fit assessment instead of adding it.
 - **Page limit.** Non-Swiss CVs: one page. Swiss CVs: two pages max, but never a stub
-  second page with one or two short sections. After every render, Read the PDF and verify: page count, no duplicated
-  sections (there was once a double "Languages" bug), sane spacing. Trim least-relevant
+  second page with one or two short sections. After every render, Read the PDF and
+  verify: page count, no duplicated sections (there was once a double "Languages" bug),
+  sane spacing. Trim least-relevant
   bullets and tighten the summary until it fits. Never report done without this check.
 - Give an honest fit assessment (strengths AND gaps) before tailoring.
 - Keep the diff against the master small: headline, summary emphasis, highlight order,
   skills order. Leave `design` untouched.
-- Put the job posting URL as a comment on line 2 of the per-job YAML.
+- Put the job posting URL as a comment on line 2 of the per-job YAML (or note "job
+  description pasted, no URL"). Older job files keep it lower in the header block; fine.
 
 ## Cover letters
 

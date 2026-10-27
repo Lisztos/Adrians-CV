@@ -1,6 +1,6 @@
 ---
 name: tailor-cv
-description: Tailor Adrian's CV to a job posting URL - assess fit, create a per-job YAML from the right base variant, render the PDF, and write a concise German or English cover letter. Use whenever a job/freelance posting URL (freelancermap, etengo, LinkedIn, etc.) is shared.
+description: Tailor Adrian's CV to a job posting URL - assess fit, create a per-job YAML from the right base variant, render the PDF, and write a concise German or English cover letter. Use whenever a job/freelance posting URL (company career page, LinkedIn, jobs.ch, etc.) is shared.
 ---
 
 # Tailor CV to Job Posting
@@ -23,19 +23,19 @@ The end-to-end pipeline used for every application in this repo. One master YAML
 ## Steps
 
 1. **Fetch and assess the posting.** Read the URL (WebFetch/Playwright). Summarize: role, must-have skills, language, remote/onsite, rate if listed. Give an honest fit assessment against the CV before tailoring — call out gaps.
-2. **Create the per-job YAML:** copy the right base to `jobs/<company-or-platform>-<role-slug>.yaml`. Put the job link as a comment on the first line after the `$schema` line.
+2. **Create the per-job YAML:** copy the right base to `jobs/<company-or-platform>-<role-slug>.yaml`. Put the job link as a comment on line 2, right after the `$schema` line (or "job description pasted, no URL").
 3. **Tailor content, never invent it.** Reorder/reword highlights to mirror the posting's keywords, trim irrelevant entries to fit: ONE page for non-Swiss CVs, TWO pages max for Swiss CVs (never a near-empty second page). Only use experience that exists in the base YAML — no invented skills or projects (past friction: hallucinated "Power BI Caching").
 4. **Render to a temp dir, then copy ONLY the PDF into the job folder.** RenderCV resolves `-o` relative to the YAML file and always emits a `.typ` alongside the PDF, so never render directly into `jobs/`. Do:
    - `./venv/bin/rendercv render jobs/<slug>.yaml -o <scratchpad>/<slug>`
    - `mkdir -p jobs/<slug>/ && cp <scratchpad>/<slug>/Adrian_Sanchez_CV.pdf jobs/<slug>/`
 
-   **Deliverables layout (strict, user-mandated 2026-07):** `jobs/<slug>/` contains ONLY the final PDF(s) and the cover letter if one was requested — nothing else (no `.typ`, no nested output dirs). The YAML source stays flat as `jobs/<slug>.yaml`.
+   **Deliverables layout (strict, user-mandated 2026-07):** `jobs/<slug>/` contains ONLY the final PDF(s), the cover letter if one was requested, and written answers to application questions (e.g. `why-<company>-answer.md`) — nothing else (no `.typ`, no nested output dirs). The YAML source stays flat as `jobs/<slug>.yaml`.
 5. **Verify the PDF yourself** before presenting: Read the PDF in `jobs/<slug>/`; check page count (one page, or two for Swiss CVs with no stub second page), section spacing, no duplicated sections (e.g. the past double "Languages" bug). Fix and re-render until clean.
 6. **Cover letter (if asked, or offer it):** short and concise, saved in the job folder as `jobs/<slug>/cover-letter.md` (English) or `jobs/<slug>/anschreiben.md` (German). If a rendered letter PDF is produced (via a separate `-anschreiben.yaml`), copy that PDF into the same folder. Style rules (non-negotiable, from memory + past corrections):
    - No em dashes — they signal AI writing.
    - Natural, native Hochdeutsch (or natural English), human-sounding, no corporate filler.
    - Concise: ~150-250 words.
-7. **Commit** the job YAML + the `jobs/<slug>/` folder (PDF + letter) with a message naming the position. Ask whether to use a per-job branch (the user has used per-job branches before) or commit to main. No AI co-author attribution (user preference).
+7. **Commit** the job YAML + the `jobs/<slug>/` folder (PDF + letter) with a message naming the position. Commit directly to `main` (no per-job branches, decided 2026-07). No AI co-author attribution (user preference).
 
 ## Notes
 
