@@ -1,0 +1,113 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+#
+# SWISS MASTER – TABULAR LAYOUT (English, Basel):
+# Two-column Swiss layout (`swiss` theme, photo top-right, dates on the left).
+# See `base-ch.yaml` for the alternative `engineeringclassic` layout.
+cv:
+  name: Adrian Sanchez
+  photo: photo.jpg
+  headline: Senior Software Engineer
+  location: Basel, Switzerland
+  email: adrian@lisztostech.com
+  phone: "+41774566973"
+  website: https://adrianisanchez.com
+  social_networks:
+    - network: LinkedIn
+      username: adrian-isaias-sanchez
+  custom_connections:
+    - fontawesome_icon: passport
+      placeholder: "Nationality: German (EU/EFTA), Mexican"
+      url: null
+  sections:
+    summary:
+      - Senior Software Engineer with 5+ years building B2B SaaS platforms. Specialises
+        in Ruby on Rails backends, complex third-party integrations, and AI-powered
+        product features, with end-to-end ownership across APIs and infrastructure.
+    experience:
+      - company: OneCall (Florida, USA)
+        position: Full Stack Software Engineer
+        location: Remote
+        start_date: 2026-08
+        end_date: present
+        summary: "**Tech Stack:** .NET Core"
+        highlights:
+          - Maintain and build new features for a .NET Core platform in the Physical Medicine
+            division
+          - Accelerate AI adoption across development and internal processes
+          - Work with other departments to shorten customer onboarding, from intake to launch
+      - company: Innovandio GmbH
+        position: Senior Software Engineer
+        location: Berlin
+        start_date: 2023-10
+        end_date: 2026-05
+        summary: "**Tech Stack:** Ruby on Rails, Matestack, PostgreSQL, Redis, Vue.js,
+          Angular.js, Terraform, AWS"
+        highlights:
+          - Architected backend systems and integrations (Twilio, APNs, FCM, Microsoft
+            Graph API, Power BI, Timecard, POS payment terminals) for a multi-service
+            Rails platform powering 30+ car wash and gas stations across Germany and
+            Austria, serving 3’000+ users
+          - Engineered CI/CD pipelines on AWS and GitHub Actions with Docker and SonarQube
+            quality gates, reducing deployment failures and release times
+          - Built an AI-powered billing pipeline integrating GitHub, calendar, video
+            call, and project management data that automated client reporting and reduced
+            it from a full day per month to 10 minutes per week
+          - Developed custom Angular plugins on top of OpenProject's Rails backend for
+            Mercedes-AMG, covering agenda management, meeting minutes, and PowerPoint
+            exports
+      - company: Demodesk GmbH
+        position: Full Stack Software Engineer / Team Lead
+        location: Munich
+        start_date: 2022-02
+        end_date: 2023-09
+        summary: "**Tech Stack:** Ruby on Rails, Vue.js, PostgreSQL, Redis, Terraform,
+          GitLab, AWS"
+        highlights:
+          - Led a team of ~10 engineers maintaining core backend services for a B2B SaaS
+            platform used by 20’000+ users
+          - Reduced engineering backlog by ~40% during team lead period while
+            maintaining continuous feature delivery
+          - Worked in a cross-functional feature team that integrated Google Meet to the
+            platform
+          - Owned scheduling, Salesforce/HubSpot/Pipedrive integrations, user onboarding,
+            and core video workflows
+          - Shipped features end to end, from system design to production deployment
+          - Refactored core modules and reduced codebase complexity by ~15%
+      - company: Setting HQ
+        position: Ruby on Rails Engineer (Intern)
+        location: Berlin
+        start_date: 2020-10
+        end_date: 2022-02
+        highlights:
+          - Optimised the platform's Office Search functionality, reducing page load
+            times by 45%
+          - Developed an office onboarding system, digitising a previous manual and
+            error-prone system
+          - Eliminated legacy dependencies by migrating the platform to a modern system
+            architecture
+    education:
+      - institution: Technische Universität Berlin
+        area: Business Informatics (Wirtschaftsinformatik)
+        degree: B.Sc.
+        start_date: 2018
+        end_date: 2022
+    skills:
+      - label: Backend
+        details: Ruby on Rails, .NET Core, PostgreSQL, Redis
+      - label: Frontend
+        details: Vue.js, TypeScript
+      - label: DevOps
+        details: AWS, Terraform, Docker, CI/CD
+      - label: Integrations
+        details: CRMs, LLMs, payments, reporting
+    languages:
+      - Spanish (native), German (C1), English (C1), French (B1)
+    references:
+      - Available on request
+settings:
+  render_command:
+    dont_generate_markdown: true
+    dont_generate_html: true
+    dont_generate_png: true
+design:
+  theme: swiss

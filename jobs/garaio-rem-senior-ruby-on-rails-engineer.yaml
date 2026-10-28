@@ -15,7 +15,7 @@ cv:
       username: adrian-isaias-sanchez
   custom_connections:
     - fontawesome_icon: passport
-      placeholder: "Staatsangehörigkeit: Deutsch, Mexikanisch"
+      placeholder: "Staatsangehörigkeit: Deutsch (EU/EFTA), Mexikanisch"
       url: null
   sections:
     Profil:
@@ -26,18 +26,16 @@ cv:
     Berufserfahrung:
       - company: OneCall (Florida, USA)
         position: Full Stack Software Engineer
-        location: Remote, Mexiko
+        location: Remote
         start_date: 2026-08
         end_date: present
         summary: "**Tech-Stack:** .NET Core"
         highlights:
-          - Wartung und Weiterentwicklung der zentralen Unternehmensplattform, eines gewachsenen
-            Legacy-Systems auf .NET Core, im Physical-Medicine-Team
-          - Gezielt eingestellt, um KI-Know-how in die Legacy-Plattform einzubringen, als Teil
-            der unternehmensweiten Initiative für schlankere Prozesse und schnellere Entwicklung
-          - Entwicklung neuer Features für die Kernplattform
-          - Abteilungsübergreifende Zusammenarbeit zur Verbesserung der Plattform und Verkürzung
-            der Zeit vom Kundeneingang bis zum Go-live
+          - Wartung und Entwicklung neuer Features für eine .NET-Core-Plattform im Bereich
+            Physical Medicine
+          - Beschleunigung der KI-Einführung in Entwicklung und internen Prozessen
+          - Abteilungsübergreifende Zusammenarbeit für schnelleres Kunden-Onboarding bis zum
+            Go-live
       - company: Innovandio GmbH
         position: Senior Software Engineer
         location: Berlin
@@ -96,12 +94,15 @@ cv:
         details: CRMs, Payments, Reporting, LLMs
       - label: Frontend
         details: Vue.js, TypeScript
+      - label: AI-Entwicklung
+        details: Claude Code, Cursor, Codex, Warp
     Sprachen:
       - Spanisch (Muttersprache), Deutsch (C1), Englisch (C1), Französisch (B1)
     Referenzen:
       - Auf Anfrage
 locale:
   language: german
+  present: heute
 settings:
   render_command:
     dont_generate_markdown: true
@@ -110,6 +111,8 @@ settings:
 design:
   theme: engineeringclassic
   typography:
+    line_spacing: 0.56em
+    alignment: left
     font_family:
       # Raleway (theme default) only has old-style numerals, so 3'000 reads as 3'ooo.
       # Keep it for name and headings, use Lato for running text.
@@ -118,5 +121,46 @@ design:
       name: Raleway
       headline: Raleway
       section_titles: Raleway
+    font_size:
+      body: 9.2pt
+      name: 23pt
+      headline: 11pt
+      connections: 9pt
+      section_titles: 1.15em
+    bold:
+      name: true
+      headline: false
+      section_titles: true
   page:
+    size: a4
     show_top_note: false
+    show_footer: false
+    top_margin: 1.35cm
+    bottom_margin: 1.35cm
+    left_margin: 1.6cm
+    right_margin: 1.6cm
+  header:
+    photo_width: 2.1cm
+    photo_space_left: 0cm
+    photo_space_right: 0.5cm
+    space_below_name: 0.24cm
+    space_below_headline: 0.24cm
+    space_below_connections: 0.55cm
+    connections:
+      space_between_connections: 0.35cm
+  section_titles:
+    space_above: 0.38cm
+    space_below: 0.32cm
+  sections:
+    space_between_regular_entries: 0.65em
+    space_between_text_based_entries: 0.2em
+  entries:
+    side_space: 0cm
+    date_and_location_width: 3.4cm
+    space_between_columns: 0.3cm
+    summary:
+      space_above: 0.08cm
+    highlights:
+      space_above: 0.1cm
+      space_between_items: 0.1cm
+      space_between_bullet_and_text: 0.5em
